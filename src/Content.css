@@ -1,0 +1,369 @@
+.homePage{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/bg-img.jpg); 
+    position: relative;
+}
+
+.interior{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.leftContent{
+  width:35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profpicbox{
+  height: 50%;
+  width: 60%;
+  background-color: rgb(202, 216, 192);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius:20px ;
+  box-shadow: 5px 5px rgb(95, 118, 95);
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.profile{
+  margin-top: 10px;
+  height: 60%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  width: 90%;
+  height: 40%;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: cursive;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.animationHome{
+  display: flex;
+  height: 100vh;
+  width:70%;
+  margin:10px;
+}
+
+.appnamehome{
+  display: flex;
+  height: 14%;
+  width:100%;  
+  margin-bottom: 12px;
+}
+
+.pandastodohome{
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pandastodohome h2{
+  font-family: cursive;
+  font-size: 15px;
+  display: flex;
+  width:100% ;
+}
+
+.pandaLottiehome{
+  display: flex;
+  height: 100%;
+  width: 30%;
+  margin-right: -35px;
+}
+
+.rightContent{
+  display: flex;
+  width:65%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.mytasknotesdiv{
+  height: 80px;
+  width: 350px;
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.myTask{
+  height: 80px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myTask h1{
+  font-family:cursive;
+  font-size: 45px;
+}
+
+.notes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.listsBox{
+  height:80%;
+  width: 80%;
+  background-color: rgb(202, 216, 192);
+  border-radius:20px ;
+  box-shadow: 5px 5px rgb(95, 118, 95);
+}
+
+.inputcontentdiv{
+  height:12%;
+  width:100%;
+  justify-content: center;
+  align-items:center;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.inputcontent{
+  height:100%;
+  width: 80%;
+  display: flex;
+}
+
+.inputcontent input{
+    height:100%;
+    width: 100%;
+     border-radius: 15px;
+     padding-left:10px ;
+     font-size: 15px;
+     font-family: cursive;
+     border: none;
+     background-color: #afcd9bad;
+}
+
+.addbutton{
+  height:100%;
+  width: 12%;
+}
+
+.addbutton button {
+  height:100%;
+  width: 100%;
+  border-radius: 15px;
+  background-color:#859574ab;
+  font-size: 20px;
+  font-family: cursive;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.listoftasks{
+  display: flex;
+  height:80%;
+  width: 100%;
+}
+
+.taskcontent{
+  height:100%;
+  width: 90%;
+  margin-left: 35px;
+  display: flex;
+}
+
+.alltasks{
+  width:100%;
+  height:100%;
+  overflow: auto;
+}
+
+.createdTasksdiv{
+  width: 97%;
+  height: 40px;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+.createdTasks{
+  width: 75%;
+  height: 100%;
+  font-family: cursive;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  background-color: #afcd9bad;
+  gap: 10px;
+  overflow:auto;
+}
+
+.notcompleted{
+  width: 100%;
+  font-size: 16px;
+}
+
+.completed{
+  width: 100%;
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+.updatebuttondiv{
+  height: 100%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.updatebutton{
+  height: 100%;
+  width: 60px;
+  border-radius: 10px;
+  background-color:#859574ab;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition:  #afcd9bad 1s;
+}
+
+.updatebuttonimg{
+  height: 30px;
+  width: 30px;
+}
+
+.deletebuttondiv{
+  height: 100%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deletebutton{
+  height: 100%;
+  width: 60px;
+  border-radius: 10px;
+  background-color:#859574ab;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition:  #afcd9bad 1s;
+}
+
+.deletebuttonimg{
+  height: 28px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  list-style-type: none;
+}
+
+@media(max-width:1000px){
+.profpicbox{
+  height: 40%;
+  width: 70%;
+}
+.username {
+  font-size: 12px;
+}
+.animationHome{
+  width:100%;
+}
+.appnamehome{
+  height: 14%;
+  width:100%;
+}
+.pandastodohome h2{
+  font-size: 12px;
+}
+.pandaLottiehome{
+  margin-right: -15px;
+}
+.mytasknotesdiv{
+  height: 70px;
+  width: 250px;
+}
+.myTask{
+  height: 70px;
+  width: 150px;
+}
+.myTask h1{
+  font-size: 25px;
+}
+.notes{
+  width: 40px;
+  height: 40px;
+}
+.inputcontentdiv{
+  height:6%;
+}
+.inputcontent input{
+   font-size: 12px;
+}
+.addbutton{
+  width: 10%;
+}
+.addbutton button {
+  border-radius: 10px;
+  font-size: 18px;
+}
+.createdTasksdiv{
+  height: 6%;
+  margin-left: 0px;
+}
+.createdTasks{
+  font-size: 12px;
+}
+.updatebuttondiv{
+  width: 30px;
+}
+.deletebuttondiv{
+  width: 30px;
+}
+.updatebuttonimg{
+  height: 15px;
+  width: 15px;
+}
+.deletebuttonimg{
+  height: 16px;
+  width: 13px;
+}
+}
