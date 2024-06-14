@@ -13,6 +13,7 @@ function App() {
     
     <BrowserRouter>
       <Routes>
+        {/* assigning path to each Components */}
         <Route path='/' Component={Signin}></Route>
         <Route path='/home' Component={Content}></Route>
       </Routes>
