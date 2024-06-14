@@ -8,12 +8,12 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-# Panda To-Do Web Application for Kids
+# **Panda To-Do Web Application for Kids**
 
-## Introduction
+## **Introduction**
 This panda themed user interface To-Do web application is designed specially for kids who want to maintain a to-do list in the digital world instead of personal diaries.
 
-## ABOUT
+## **GUIDE**
 
 ### Step 1: User Registration
 - Kids can register on the Panda To-Do web application by providing email address with credentials.
@@ -30,15 +30,17 @@ This panda themed user interface To-Do web application is designed specially for
 ### Step 5: Task Management
 - Kids can mark tasks as completed once they finish them to keep track of what they did and what they yet to do.
 
-### Step 6: Firebase Firestore 
+## **About**
+### Firebase Firestore 
 - The web application uses Firebase Firestore to store and retrieve the data when logged in again.
+- The provider this web application use for authentication purpose is Google 
 
-### Step 7: Simple System
+### Simple System
 - The web application is specially designed for kids as so it does not have any complex functionalites.
 
-## Note
-This web application is meant only for PC/Laptop not for mobiles/tabs.
-And also Color variation may appear according to your pc/laptop's display.
+## **Note**
+This web application is meant only for PC/Laptop not for Mobiles/Tabs.
+And also Color variation may appear according to your PC/Laptop's display.
 
-## Conclusion
+## **Conclusion**
 The Panda To-Do web application offers a playful and intuitive platform for kids to manage their tasks digitally, fostering responsibility and organization from an early age.
