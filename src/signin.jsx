@@ -43,16 +43,18 @@ function Signin() {
             </div>
             <div className='loginbutton'>
               <button onClick={handleClick} className='signinbutton'>
+                 {/* when we click this a pop up will appear from the provider for authentication */}
                 <div className='googleimage'>
                   <img src={google} alt="" className='google'/>
                 </div>
-                <div className='continue'>
+                <div className='continue'> 
                   Continue with Google
                 </div>
               </button>
               </div>
         </div>
         {redirect?navigate("/home"):console.log("error ")}
+        {/* if the sign in is success it will be redirected to to do page else it will show an error message in console */}
      </div>
   )
 }

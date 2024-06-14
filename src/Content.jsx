@@ -39,7 +39,7 @@ function Content(){
     // CRUD Functions
     const taskref = collection(db,'taskscollection')
     useEffect(()=> {
-        const gettasks = async()=>{
+        const gettasks = async()=>{ //getting all the tasks
            const data =await getDocs(taskref)
            const filterddata = data.docs.map(doc =>({...doc.data(),id:doc.id}))
            setTasks(filterddata)
@@ -53,27 +53,27 @@ function Content(){
     
     const Onsubmit = async()=>{ 
         setNewtask('')
-        if (Edittask) {
+        if (Edittask) { //if edittask variable is not null then its performs update task 
             const updateref = doc(db,'taskscollection',Edittask.id)
             await updateDoc(updateref,{text:Newtask})
             setEdittask(null)
         }
         else{
-            await addDoc(taskref,{text: Newtask,completed:false})
+            await addDoc(taskref,{text: Newtask,completed:false}) // or else it performs add task
         }
     }
 
-    const deletetask = async(task) =>{
+    const deletetask = async(task) =>{ // to delete the tasks
         const docref = doc(db,'taskscollection',task.id)
         await deleteDoc(docref)
     }
 
-    const updatetask= async(task) =>{
+    const updatetask= async(task) =>{ // setting up which task to update
         setNewtask(task.text)
         setEdittask(task)
     }
 
-    const complete = async(task)=>{
+    const complete = async(task)=>{ // to show whether the task is completed or not
         const radioref = doc(db,'taskscollection',task.id)
         await updateDoc(radioref,{completed:true})
     }
@@ -115,6 +115,7 @@ function Content(){
                     <div className='listsBox'>
                         <div className='inputcontentdiv'> 
                             <div className='inputcontent'>
+                                {/* here is the input box to add the tasks */}
                                 <input type="text" placeholder='Add a Task' value={Newtask} onChange={Inputchange}/>
                             </div>
                             <div className='addbutton'>
@@ -125,22 +126,27 @@ function Content(){
                             <div className='taskcontent'>
                                 <ul className='alltasks'>  
                                 {
+                                // this map function render the list of tasks
                                 Tasks.map(task =>
-                                <li key={task.id}>
+                                <li // this is the template for each of the tasks in the list
+                                key={task.id}> 
                                 <div className='createdTasksdiv'>
 
                                     <div className='createdTasks'>
+                                        {/* this is the radio button */}
 
                                         <input type="radio" name="" id="" onClick={()=> complete(task)} checked = {task.completed} />
-                                        <span className={`${task.completed? 'completed' : "notcompleted"}`}>{task.text}</span>
+                                        <span className={`${task.completed? 'completed' : "notcompleted"}`}>{task.text}</span>{/*this is where task text will be shown*/}
                                     
                                     </div>
                                     <div className='updatebuttondiv'>
+                                        {/* this is the update button */}
                                         <button className='updatebutton' onClick={()=> updatetask(task)}>                                                   
                                             <img src={update} alt="" className='updatebuttonimg'/>
                                         </button>
                                     </div>
                                     <div className='deletebuttondiv'>
+                                        {/* this is the delete button */}
                                         <button className='deletebutton' onClick={()=> deletetask(task)}>
                                             <img src={trash} alt="" className='deletebuttonimg'/>
                                         </button>
